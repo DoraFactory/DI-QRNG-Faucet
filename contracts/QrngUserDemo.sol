@@ -4,14 +4,15 @@ import "./QrngCoordinator.sol";
 import "./ConsumerBase.sol";
 
 contract QrngUserDemo is ConsumerBase {
-    uint32 callbackGasLimit = 21_000_000;
+    uint32 callbackGasLimit = 80_000;
     uint32 numWords = 1;
     address owner;
 
     QrngCoordinator COORDINATOR;
 		
-    address doraCoordinatorAddr = 0x9676fC93257876428e2D0284B5e5C12a718F1D1E;
+    address doraCoordinatorAddr = 0x7156e92AF2d3DEeC0F04E3e321226389D16F6e93;
     
+
     uint256 public requestId;
     uint256[] public s_randomWords;
     

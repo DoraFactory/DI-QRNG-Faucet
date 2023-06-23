@@ -2,7 +2,7 @@
 
 ## OnChain Faucet Calling Guide
 
-Dora Qrng Oracle Contract Address: **`0x9676fC93257876428e2D0284B5e5C12a718F1D1E`**
+Dora Qrng Oracle Contract Address: **`0x7156e92AF2d3DEeC0F04E3e321226389D16F6e93`**
 
 Dora Qrng Oracle Contract: [QrngCoordinator.sol](./contracts/QrngCoordinator.sol)
 
@@ -29,7 +29,7 @@ import "./ConsumerBase.sol";
 
 contract QrngUserDemo is ConsumerBase {
 		// Set the maximum gas that can be used by oracle under the chain.
-    uint32 callbackGasLimit = 21_000_000;
+    uint32 callbackGasLimit = 80_000;
     // Set the number of qrng random numbers to request
     uint32 numWords = 1;
     address owner;
@@ -37,7 +37,7 @@ contract QrngUserDemo is ConsumerBase {
     QrngCoordinator COORDINATOR;
 		
 		// Official QrngCoordinator's contract address
-    address doraCoordinatorAddr = 0x9676fC93257876428e2D0284B5e5C12a718F1D1E;
+    address doraCoordinatorAddr = 0x7156e92AF2d3DEeC0F04E3e321226389D16F6e93;
     
     uint256 public requestId;
     uint256[] public s_randomWords;
@@ -66,9 +66,9 @@ contract QrngUserDemo is ConsumerBase {
 
 ## OffChain Faucet Calling Guide
 
-**HTTPS**: `https://qrng-dev.dorafactory.org/api`
+**HTTPS**: `https://qrng-dev.dorafactory.org/faucet-api/`
 
-**WSS**: `wss://qrng-dev.dorafactory.org/api`
+**WSS**: `wss://qrng-dev.dorafactory.org/faucet-ws/`
 
 #### `/random/GetRandomWords`
 
