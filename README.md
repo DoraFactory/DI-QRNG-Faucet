@@ -66,9 +66,9 @@ contract QrngUserDemo is ConsumerBase {
 
 ## OffChain Faucet Calling Guide
 
-**HTTPS**: `https://qrng-dev.dorafactory.org/faucet-api/`
+**HTTPS**: `https://qrng.dorafactory.org/faucet-api/`
 
-**WSS**: `wss://qrng-dev.dorafactory.org/faucet-ws/`
+**WSS**: `wss://qrng.dorafactory.org/faucet-ws/`
 
 #### `/random/GetRandomWords`
 
