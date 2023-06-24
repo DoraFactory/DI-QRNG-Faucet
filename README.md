@@ -28,7 +28,7 @@ import "./QrngCoordinator.sol";
 import "./ConsumerBase.sol";
 
 contract QrngUserDemo is ConsumerBase {
-		// Set the maximum gas that can be used by oracle under the chain.
+    // Set the maximum gas that can be used by oracle under the chain.
     uint32 callbackGasLimit = 80_000;
     // Set the number of qrng random numbers to request
     uint32 numWords = 1;
@@ -36,7 +36,7 @@ contract QrngUserDemo is ConsumerBase {
 
     QrngCoordinator COORDINATOR;
 		
-		// Official QrngCoordinator's contract address
+    // Official QrngCoordinator's contract address
     address doraCoordinatorAddr = 0x7156e92AF2d3DEeC0F04E3e321226389D16F6e93;
     
     uint256 public requestId;
@@ -48,7 +48,6 @@ contract QrngUserDemo is ConsumerBase {
     }
 
 
-		// 
     function requestRandomWords() external {
         require(msg.sender == owner);
         requestId = COORDINATOR.requestRandomWords(
